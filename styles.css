@@ -1,0 +1,105 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.controls {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+#text-input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#show-text-button,
+#change-color-button,
+#reset-button,
+#return-button {
+  width: fit-content;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+}
+
+#show-text-button:hover,
+#change-color-button:hover,
+#reset-button:hover,
+#return-button:hover {
+  background: #1759bb;
+}
+
+.result h2 {
+  margin-bottom: 10px;
+}
+
+.output-area {
+  min-height: 120px;
+  padding: 12px;
+  border: 1px dashed #bbb;
+  border-radius: 4px;
+  background: #fafafa;
+  line-height: 1.8;
+}
+
+.character {
+  display: inline-block;
+  padding: 1px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.character.dragging-character {
+  opacity: 0.4;
+}
+
+.character.selected {
+  background: #cde2ff;
+}
+
+.selection-rectangle {
+  position: fixed;
+  border: 1px solid #1f6feb;
+  background: rgba(31, 111, 235, 0.15);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.disable-text-selection {
+  user-select: none;
+}
+
+.free-character {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  user-select: none;
+}
