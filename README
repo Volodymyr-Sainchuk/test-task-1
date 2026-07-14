@@ -1,0 +1,22 @@
+# Test Task
+
+## Technologies
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## Features
+
+- Enter and display text
+- Render every character as a separate element
+- Ctrl + Click selection
+- Rectangle selection
+- Drag a single letter
+- Drag multiple selected letters
+- Swap letters
+- Return letters to the output area
+
+## Run
+
+Clone the repository and open `index.html` using Live Server or any local web server.
